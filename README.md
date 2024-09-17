@@ -1,6 +1,6 @@
 # ProjectOps1
 
-# Create a Vnet , Public and Private Subnet across multiple AZ.
+# Create a Vnet , Public and Private Subnet.
 # Create Security Group required for Public and Private subnet.
 
 # create a VM on public and Private subnet. 

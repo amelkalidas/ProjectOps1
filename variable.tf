@@ -6,3 +6,10 @@ variable "subscriptionId" {             # During Terraform plan we can input the
 variable "Location" {
     default = "centralindia"  
 }
+
+variable "admin_password" {
+  description = "The admin password for the Linux VM"
+  type        = string
+  sensitive   = true  # Mark the variable as sensitive
+  default = "SupersecurePass@2022"
+}
