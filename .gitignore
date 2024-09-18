@@ -1,4 +1,6 @@
 #ignore all .terraform files
+terraform.tfstate
+terraform.tfstate.backup
 .*
 !/.gitignore
 .terraform/
