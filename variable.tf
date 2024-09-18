@@ -11,5 +11,16 @@ variable "admin_password" {
   description = "The admin password for the Linux VM"
   type        = string
   sensitive   = true  # Mark the variable as sensitive
-  default = "SupersecurePass@2022"
+}
+
+variable "storageaccount" {
+  default = "opsprodfileshare01"
+  type = string
+  description = "file share for the ops ."
+  
+}
+
+variable "recoveryvaultname" {
+  default = "CentralIndia-RV"
+  
 }
