@@ -1,9 +1,9 @@
 # ProjectOps1
 
-# Create a Vnet , Public and Private Subnet.
-# Create Security Group required for Public and Private subnet.
+# Create a Vnet , Public and Private Subnet. # done
+# Create Security Group required for Public and Private subnet. # done
 
-# create a VM on public and Private subnet. 
+# create a VM on public and Private subnet.  
 # private VM should have outbound access to internet.
 
 # Create a file share to be accessed by both VM, ( R W operation allowed )
