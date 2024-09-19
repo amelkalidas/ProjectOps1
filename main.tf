@@ -201,3 +201,10 @@ resource "azurerm_backup_protected_vm" "host0-backup" {
   backup_policy_id = azurerm_backup_policy_vm.vm_backup_policy.id  
   depends_on = [ azurerm_recovery_services_vault.recovery_vault ]
 }
+resource "azurerm_backup_protected_vm" "database-backup" {
+  recovery_vault_name = azurerm_recovery_services_vault.recovery_vault.name
+  resource_group_name = azurerm_resource_group.prod_rg.name
+  source_vm_id = azurerm_linux_virtual_machine.prod_Private_Vm.id
+  backup_policy_id = azurerm_backup_policy_vm.vm_backup_policy.id  
+  depends_on = [ azurerm_recovery_services_vault.recovery_vault ]
+}
