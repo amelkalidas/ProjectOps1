@@ -11,6 +11,7 @@ variable "admin_password" {
   description = "The admin password for the Linux VM"
   type        = string
   sensitive   = true  # Mark the variable as sensitive
+  
 }
 
 variable "storageaccount" {
