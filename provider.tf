@@ -7,8 +7,9 @@ terraform {
   }
 }
 
+
 provider "azurerm" {
-  features {}
-  subscription_id = var.subscriptionId
+  features {}                                 
+
 }
 
